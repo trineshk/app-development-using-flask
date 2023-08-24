@@ -2,9 +2,16 @@
 <html>
 <head>
     <title>Quiz Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Quiz Results</h1>
-    <p>Your score: {{ score }}/{{ total }}</p>
+    <div class="container mt-5">
+        <h1 class="text-center">Quiz Results</h1>
+        <div class="jumbotron">
+            <p class="lead text-center">Your score: <span class="font-weight-bold">{{ score }}</span>/<span class="font-weight-bold">{{ total }}</span></p>
+        </div>
+    </div>
+
+    
 </body>
 </html>

@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Quiz</title>
-  </head>
-  <body>
-    <h1>Welcome to the quiz</h1>
-    <img src='static/banner.jpg' height='320' >
+<head>
+    <title>Quiz Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container" >
+            <a class="navbar-brand" href="https://www.google.com">
+                <img src="static/jessica-pamp-2XeP0c-J5B4-unsplash.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+                Quiz Book
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div class="d-flex justify-content-center mb-5">
+            <img src="static/banner.jpg" height="320" width="500px" alt="Banner Image">
+        </div>
 
-  <form>
-    <p>What is the capital of India?</p>
-    <label>
-      <input type="radio" name='answer' value='option1'
-      Option A: Delhi 
-    </label><br>
-    <label>
-      <input type="radio" name='answer' value='option2'
-      Option B: Mumbai 
-    </label><br>
-    <label>
-      <input type="radio" name='answer' value='option3'
-      Option C: Chennai 
-    </label><br>
-    <label>
-      <input type="radio" name='answer' value='option4'
-      Option D: Punjab 
-    </label><br>
-    <button type="button" onclick='SubmitAnswer()'>Submit</button>
-    
-  </form>
+    <div class="container mt-5">
+        <section id="about" class="mb-5">
+            <h2>About Quiz Book</h2>
+            <ul>
+            <li>  Quiz Book is your all-in-one platform for taking quizzes, storing your results, and evaluating your performance. </li>
+             <li> With a focus on accuracy and reliability, our questions are meticulously crafted by reviewing OISD manuals. </li>
+              You'll find quizzes across three distinct categories, each offering a unique learning experience. </li>
+             <li> Our user-friendly interface ensures a seamless quiz-taking process, and all quizzes consist of 10 compulsory multiple-choice questions.</li> 
+              <li>Take the next step in your learning journey with Quiz Book!</li>
+            </ul>
+        </section>
+    </div>
 
-  </body>
+ <div class="d-flex justify-content-center">
+            <a type="button" class="btn btn-primary btn-lg" href={{ url_for('quiz') }}>Take Quiz</a>
+        </div>
+  
+    <div class="container mt-5">
+        <section id="about" class="mb-5">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. We're here to assist you on your learning path. Contact us at <a href="mailto:navodayae@gmail.com">navodayae@gmail.com</a> or give us a call at <strong>+91 997 215 6745</strong>.</p>
+        </section>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Quiz Book &copy; 2023. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
