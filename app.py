@@ -18,6 +18,11 @@ questions = [
     "options": [6, 7, 0, 4],
     "correct_answer": '7'
   },
+  {
+    "question": "Python is dynamically interpreted programming language?",
+    "options": ['Yes', 'No'],
+    "correct_answer": 'Yes'
+  },
 ]
 
 
